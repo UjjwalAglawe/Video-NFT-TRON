@@ -34,6 +34,8 @@ function App() {
 
   const checkTronLink = async () => {
     // if (window && window.tronLink) {
+      const tron = window.tronLink;
+      const tronWeb = tron.tronWeb;
       const acc = await window.tronLink.request({ method: 'tron_requestAccounts' });
       try {
         console.log("This is ACC", acc);
